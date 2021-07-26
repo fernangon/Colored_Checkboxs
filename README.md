@@ -1,4 +1,4 @@
-This is a example of 3 colored checkboxs.
+This is a example of 3 colored and animated checkboxs.
 
 Use it for free in your web site.
 
