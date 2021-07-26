@@ -65,14 +65,14 @@ body {
 
     background: url("check.svg") center no-repeat;
 
-    transform: scale(0); /* ----------------------------------------------------------------------------------------------------------> (2) */
+    transform: scale(0); 
 
     transition-delay: .2s;
 }
 
 
 .scaleNormal {
-    transform: scale(1) !important; /* <----------------------------------------------------------------------------------------------- (2) */
+    transform: scale(1) !important; 
 }
 
 
