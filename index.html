@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Checkbox Colores</title>
+    <link rel="stylesheet" href="micss.css">
+
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <div class="button one">
+            <div class="check"></div>
+        </div>
+
+        <div class="button two">
+            <div class="check"></div>
+        </div>
+
+        <div class="button three">
+            <div class="check"></div>
+        </div>
+
+    </div>
+
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" 
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+            crossorigin="anonymous">
+    </script>
+
+    <script>
+        // (function() {
+
+            $(document).ready(function() {
+
+                function changeButton(className, colorName) {
+                    $(className).click(function() {
+                        $(this).toggleClass(colorName);
+                        $(this).children().toggleClass("scaleNormal"); /* El check del botón pulsado. */
+                    });
+                }
+
+                changeButton(".one", "blue");
+                changeButton(".two", "red");
+                changeButton(".three", "green");
+            
+            });
+
+        // }).call(this);
+    </script>
+
+
+
+</body>
+
+
+</html>
+
+
